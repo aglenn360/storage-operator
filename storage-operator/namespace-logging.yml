@@ -3,6 +3,6 @@ kind: Namespace
 metadata:
   name: openshift-logging
   annotations:
-      openshift.io/node-selector: ""
+    openshift.io/node-selector: ""
   labels:
-      openshift.io/cluster-monitoring: "true"
+    openshift.io/cluster-monitoring: "true"
