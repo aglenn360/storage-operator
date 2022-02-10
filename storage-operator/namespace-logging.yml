@@ -1,9 +1,8 @@
 api_version: v1
 kind: Namespace
-definition:
-  metadata:
-    name: openshift-logging
-    annotations:
+metadata:
+  name: openshift-logging
+  annotations:
       openshift.io/node-selector: ""
-    labels:
+  labels:
       openshift.io/cluster-monitoring: "true"
