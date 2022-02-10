@@ -1,0 +1,11 @@
+api_version: operators.coreos.com/v1alpha1
+kind: Subscription
+name: cluster-logging
+namespace: openshift-logging
+definition:
+  spec:
+    channel: "{{ logging_operator_version }}"
+    installPlanApproval: Automatic
+    name: cluster-logging
+    source: redhat-operators
+    sourceNamespace: openshift-marketplace
